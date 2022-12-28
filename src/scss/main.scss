@@ -1,0 +1,55 @@
+@import "./../scss/global/_normailze";
+
+// Переменные
+@import "./../scss/global/_variables";
+
+// Миксины
+@import "./../scss/global/_mixins";
+
+// Сброс дефолтных стилей браузера (дополнительный)
+@import "./../scss/global/_global";
+
+// Основные стили
+@import "./../scss/global/_base";
+
+// Размеры шрифтов повторяющихся элементов (h1, заголовки секций и т.д.)
+@import "./../scss/global/_typography";
+
+// Общие стили для кнопок
+@import "./../scss/global/_btns";
+
+// Общие стили для инпутов, чекбоксов и т.д.
+@import "./../scss/global/_inputs";
+
+// Общие стили для секций (паддинги и т.д.)
+@import "./../scss/global/_sections";
+
+// Плагины
+// @import "./../scss/libs/swiper-bundle.min"; // Слайдер
+
+// Хедер
+@import "./../components/sections/header/_header";
+
+// Футер
+@import "./../components/sections/footer/_footer";
+
+// БЭМ-блоки
+// @import "./../components/bem-blocks/accordion/accordion"; // Аккордион
+// @import "./../components/bem-blocks/burger/burger"; // Бургер
+@import "./../components/bem-blocks/logo/_logo"; // Логотип
+@import "./../components/bem-blocks/phone/_phone"; // Телефон
+@import "./../components/bem-blocks/cart-btn/_cart-btn"; // Кнопка перехода в корзину
+@import "./../components/bem-blocks/btn-user/_btn-user"; // Кнопка перехода в личный кабинет
+@import "./../components/bem-blocks/btn-heart/_btn-heart"; // Кнопка перехода к избранным товарам
+@import "./../components/bem-blocks/header-text/_header-text"; // Текст в хедере
+@import "./../components/bem-blocks/header-btns/_header-btns"; // Блок с кнопками в хедере (user, heart, cart)
+@import "./../components/bem-blocks/main-nav/_main-nav"; // Меню
+@import "./../components/bem-blocks/search/_search"; // Поиск
+@import "./../components/bem-blocks/product-nav/_product-nav"; // Меню продуктов
+@import "./../components/bem-blocks/product-card/_product-card"; // Карточка товара
+@import "./../components/bem-blocks/product-cards/_product-cards"; // Блок с карточками товара
+// @import "./../components/bem-blocks/modal/modal"; // Модалки
+
+// Секции
+@import "./../components/sections/products/_products"; // Главная секция с выбором категории продуктов
+@import "./../components/sections/product/product"; // Секция одного товара

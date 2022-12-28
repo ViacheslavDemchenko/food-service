@@ -1,0 +1,49 @@
+section.product
+  .container
+    .product__inner
+      .product__info
+        .product__img
+          img(src="./assets/img/sushi-1.jpg" width="300" height="190" alt="Филадельфия с креветкой")
+        .product__bottom
+          h2.product__desc Состав
+          ul.product__desc-list 
+            li.product__desc__item рис
+            li.product__desc__item свинина
+            li.product__desc__item морковь
+            li.product__desc__item лук репчатый
+            li.product__desc__item масло растительное
+            li.product__desc__item соль
+            li.product__desc__item зира
+          h2.product__spec Характеристики
+          ul.product__spec-list 
+            li.product__spec-item
+              span Белки
+              div
+              span 6.7
+            li.product__spec-item
+              span Жиры
+              div
+              span 22
+            li.product__spec-item
+              span Углеводы
+              div
+              span 16.9
+            li.product__spec-item
+              span Масса Нетто
+              div
+              span 230 грамм
+      .product__action
+        .product__title Филадельфия с креветкой
+        .product__weight-wrap 
+          svg(width="20" height="20")
+            use(xlink:href="./assets/img/icons/sprite.svg#dish" width="20" height="20" alt="Вес порции")
+          span.product__weight 230 гр.
+        .product__price Цена: 
+          span 500 ₽
+        .product__btns-wrap
+          .product__btns 
+            button.product__minus - 
+            span.product__count 1
+            button.product__plus +
+          span.product__total 5000
+        button.btn.product__cartbtn Добавить

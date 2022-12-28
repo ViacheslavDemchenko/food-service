@@ -1,0 +1,180 @@
+.product-card {
+  max-width: 32.7rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+  will-change: box-shadow;
+  transition: box-shadow 0.3 ease-in-out;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0.4rem 0.4rem 0.8rem 0rem rgba(34, 60, 80, 0.2);
+  }
+
+  &__img {
+    position: relative;
+    max-width: 33rem;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#fff, 0.2);
+      will-change: display;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__inner {
+    padding: 0 0.5rem 1rem;
+
+    &__name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+  }
+
+  &__title {
+    position: relative;
+    width: 90%;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__info {
+    position: absolute;
+    right: -3rem;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0.1rem solid #000;
+  }
+
+  &__weight-wrap {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-top: 0.2rem;
+      fill: #FE5F00;
+      stroke: #FE5F00;
+      stroke-width: 1rem;
+    }
+  }
+
+  &__weight {
+    margin-left: 0.5rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+  }
+
+  &__price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__top,
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__top {
+    margin-bottom: 1rem;
+  }
+
+  &__btns {
+    border: solid 0.1rem #FE5F00;
+    display: flex;
+    align-items: center;
+    border-radius: 1.2rem;
+    line-height: 4rem;
+  }
+
+  &__minus,
+  &__plus {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.2rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: #000;
+    border: none;
+    border-radius: 1.2rem;
+    background-color: transparent;
+    will-change: background-color;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: #C0C0C0;
+    }
+  }
+
+  &__count {
+    font-size: 2.2rem;
+    line-height: 4rem;
+  }
+
+  &__cartbtn {
+    width: 12rem;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    will-change: box-shadow;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0rem 0.8rem 1rem 0rem rgba(34, 60, 80, 0.2);
+    }
+  }
+
+  &__total {
+    position: relative;
+    margin: 1.2rem 0 0 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+
+    &::before {
+      position: absolute;
+      content: "Сумма";
+      top: -1.4rem;
+      right: 0;
+      width: 100%;
+      text-align: right;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #000;
+    }
+  }
+}

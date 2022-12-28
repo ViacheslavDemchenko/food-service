@@ -1,0 +1,19 @@
+.header {
+  // position: fixed;
+  padding: 2rem 0 0 0;
+  background-color: #fff;
+  // box-shadow: 0rem 0.8rem 0.8rem 0rem rgba(34, 60, 80, 0.2);
+
+  &__inner {
+    width: 100%;
+    border-bottom: 0.1rem solid #000;
+
+    &-top,
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+  }
+}

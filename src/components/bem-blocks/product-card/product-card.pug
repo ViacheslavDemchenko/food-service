@@ -1,0 +1,23 @@
+.product-card
+  a(href="product.html")
+    .product-card__img
+      img(src="./assets/img/sushi-1.jpg" width="300" height="190" alt="Филадельфия с креветкой")
+    .product-card__inner
+      .product-card__name
+        h2.product-card__title Филадельфия с креветкой
+          span.product-card__info
+            svg(width="20" height="20")
+              use(xlink:href="./assets/img/icons/sprite.svg#info" alt="Информация о товаре")
+      .product-card__weight-wrap        
+        svg(width="20" height="20")
+          use(xlink:href="./assets/img/icons/sprite.svg#dish" width="20" height="20" alt="Вес порции")
+        span.product-card__weight 230 гр.
+      .product-card__top
+        span.product-card__price 500 ₽
+        .product-card__btns 
+          button.product-card__minus - 
+          span.product-card__count 1
+          button.product-card__plus +
+      .product-card__bottom
+        button.btn.product-card__cartbtn Добавить
+        .product-card__total 5000

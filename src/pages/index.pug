@@ -1,0 +1,10 @@
+extends ./../layouts/main
+
+block variables
+  - let pageTitle = 'Food Service';
+
+block content
+  .wrapper
+    include ./../components/sections/header/header.pug
+    include ./../components/sections/products/products.pug
+    include ./../components/sections/footer/footer.pug
